@@ -60,7 +60,7 @@
             container.style.display = 'none';
             dropArea.style.display = 'block';
             input.value = '';
-            container.children.forEach(x => x.remove());
+            [...container.children].forEach(x => x.remove());
           }
         }));
       }
