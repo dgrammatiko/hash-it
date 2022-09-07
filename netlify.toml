@@ -1,0 +1,17 @@
+
+[[headers]]
+  for = "/*"
+    [headers.values]
+      Link = '''
+      <https://cdn.jsdelivr.net/npm/naf-css@3.0.1/css/all.min.css>; rel=preload; as=stylesheet; crossorigin \
+      '''
+
+[[headers]]
+  for = "/*.webmanifest"
+    [headers.values]
+      Content-Type = "application/manifest+json"
+
+[[headers]]
+  for = "/static/*"
+    [headers.values]
+      Cache-Control = "public, max-age=31536000"
