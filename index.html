@@ -20,19 +20,6 @@
         border-color: purple;
       }
     </style>
-  </head>
-
-  <body class="grid-it">
-    <main style="max-width: 360px; margin-left:auto; margin-right:auto">
-      <div id="drop-area">
-        <p>Upload a zip file with the file dialog or by dragging and dropping any zip file onto the dashed region</p>
-        <label class="button" for="fileInput">Select a file</label>
-        <input type="file" id="fileInput" multiple accept="application/zip">
-      </div>
-      <div id=results style="display:none"></div>
-      <div>Created by <a href="https://twitter.com/dgrammatiko">dgrammatiko</a></div>
-    </main>
-
     <script type=module>
       let store = {};
       const input = document.getElementById('fileInput');
@@ -102,6 +89,18 @@
         };
       }
     </script>
+  </head>
+
+  <body class="grid-it">
+    <main style="max-width: 360px; margin-left:auto; margin-right:auto">
+      <div id="drop-area">
+        <p>Upload a zip file with the file dialog or by dragging and dropping any zip file onto the dashed region</p>
+        <label class="button" for="fileInput">Select a file</label>
+        <input type="file" id="fileInput" multiple accept="application/zip">
+      </div>
+      <div id=results style="display:none"></div>
+      <div>Created by <a href="https://twitter.com/dgrammatiko">dgrammatiko</a></div>
+    </main>
   </body>
 
 </html>
