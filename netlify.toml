@@ -3,7 +3,7 @@
   for = "/*"
     [headers.values]
       Link = '''
-      <https://cdn.jsdelivr.net/npm/naf-css@3.0.1/css/all.min.css>; rel=preload; as=stylesheet; crossorigin \
+      <https://cdn.jsdelivr.net/npm/naf-css@3.0.1/css/all.min.css>; rel=preload; as=style; crossorigin \
       '''
 
 [[headers]]
