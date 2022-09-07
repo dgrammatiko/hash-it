@@ -21,9 +21,9 @@
       }
     </style>
     <script type=module>
-      let store = {};
       const input = document.getElementById('fileInput');
       const dropArea = document.getElementById('drop-area');
+      const container = document.getElementById('results');
 
       input.addEventListener('change', handleDrop, false);
       dropArea.addEventListener('drop', handleDrop, false);
@@ -45,10 +45,9 @@
       }
 
       function alertIt(file, obj) {
-        const container = document.getElementById('results');
         container.style.display = 'block';
         dropArea.style.display = 'none';
-        container.innerHTML = '';
+
         container.append(Object.assign(document.createElement('h3'), {
           innerText: file.name
         }))
@@ -61,6 +60,7 @@
             container.style.display = 'none';
             dropArea.style.display = 'block';
             input.value = '';
+            container.children.forEach(x => x.remove());
           }
         }));
       }
